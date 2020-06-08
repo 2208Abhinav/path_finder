@@ -6,6 +6,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: const Text(
+          'Path Finder',
+          style: TextStyle(color: Colors.white),
+        ),
+        brightness: Brightness.dark,
+      ),
       body: SafeArea(
         child: GridView.count(
           crossAxisCount: 2,
