@@ -15,20 +15,48 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: GridView.count(
-          crossAxisCount: 2,
+          crossAxisCount: 1,
           mainAxisSpacing: 10,
-          padding: EdgeInsets.all(10),
+          padding: EdgeInsets.all(15),
           crossAxisSpacing: 5,
           children: <Widget>[
             GestureDetector(
               child: Card(
-                child: Center(
-                  child: Text(
-                    'DFS',
-                    style: TextStyle(
-                      fontSize: 30,
+                clipBehavior: Clip.hardEdge,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        color: Colors.lightGreen,
+                        child: Text(
+                          'DFS',
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(20),
+                      child: Text(
+                        'Depth First Search (DFS) just finds a valid path between two points. '
+                        'There is no check on the length of the path. The path (if found) can be '
+                        'absurdly long or can be the shortest.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.lightGreen,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
                 elevation: 5,
               ),
