@@ -210,7 +210,6 @@ class DfsProvider with ChangeNotifier {
         }
         int tileRow = tile[0];
         int tileCol = tile[1];
-        print('$tileRow=$tileCol');
 
         if (_currentSpeed == SLOW) {
           await Future.delayed(Duration(milliseconds: 150));
@@ -268,7 +267,6 @@ class DfsProvider with ChangeNotifier {
   }
 
   set setSpeed(int speed) {
-    print(speed);
     _currentSpeed = speed;
   }
 }
