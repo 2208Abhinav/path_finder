@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:path_finder/routes.dart';
+import 'package:path_finder/screens/bfs/bfs_screen.dart';
 import 'package:path_finder/screens/dfs/dfs_screen.dart';
 import 'package:path_finder/screens/home/home_screen.dart';
 
@@ -36,6 +37,7 @@ class App extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         Routes.HOME: (BuildContext ctx) => HomeScreen(),
         Routes.DFS: (BuildContext ctx) => DfsScreen(),
+        Routes.BFS: (BuildContext ctx) => BfsScreen(),
       },
     );
   }
