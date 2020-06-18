@@ -62,6 +62,46 @@ class HomeScreen extends StatelessWidget {
               ),
               onTap: () => Navigator.of(context).pushNamed(Routes.DFS),
             ),
+            GestureDetector(
+              child: Card(
+                clipBehavior: Clip.hardEdge,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        width: double.infinity,
+                        alignment: Alignment.center,
+                        color: Colors.lightGreen,
+                        child: Text(
+                          'BFS',
+                          style: TextStyle(
+                            fontSize: 40,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.center,
+                      padding: EdgeInsets.all(20),
+                      child: Text(
+                        'Breadth First Search (BFS) finds the shortest valid path between two points.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.lightGreen,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 14,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+                elevation: 5,
+              ),
+              onTap: () => Navigator.of(context).pushNamed(Routes.BFS),
+            ),
           ],
         ),
       ),
