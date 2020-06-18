@@ -167,7 +167,7 @@ class Controllers extends StatelessWidget {
                                     child: Slider(
                                       value: _rows,
                                       min: 5.0,
-                                      max: 25.0,
+                                      max: 30.0,
                                       label: '${_rows.toInt()}',
                                       divisions: 20,
                                       activeColor: Colors.lightGreen,
@@ -191,7 +191,7 @@ class Controllers extends StatelessWidget {
                                     child: Slider(
                                       value: _cols,
                                       min: 5.0,
-                                      max: 25.0,
+                                      max: 30.0,
                                       label: '${_cols.toInt()}',
                                       divisions: 20,
                                       activeColor: Colors.lightGreen,
