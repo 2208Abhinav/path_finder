@@ -1,16 +1,22 @@
-# path_finder
+# Path Finder
 
-A new Flutter project.
+A mobile application (Android and iOS) to visualize DFS and BFS path finding algorithms.
 
-## Getting Started
+### Build the apk:
+- First make sure that you have installed all the necessary packages by running the following command:
+```sh
+$ flutter pub get
+```
+- Run the following command to build the apk of the application.
+```sh
+$ flutter build apk
+```
+The apk can be found at `build/app/outputs/flutter-apk/app-release.apk`
 
-This project is a starting point for a Flutter application.
+### DFS
+Depth First Search (DFS) just finds a valid path between two points. There is no check on the length of the path. The path (if found) can be absurdly long or can be the shortest.
+![DFS gif](https://raw.githubusercontent.com/2208Abhinav/path_finder/master/gifs/dfs_path_finder.gif?token=AHGPYMM4ACHO5247LXNNKCS77XYZI)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### BFS
+Breadth First Search (BFS) finds the shortest valid path between two points.
+![BFS gif](https://raw.githubusercontent.com/2208Abhinav/path_finder/master/gifs/bfs_path_finder.gif?token=AHGPYMJUJCFZP22TPCSALCC77XYQQ)
