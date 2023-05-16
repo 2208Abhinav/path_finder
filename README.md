@@ -15,8 +15,10 @@ The apk can be found at `build/app/outputs/flutter-apk/app-release.apk`
 
 ### DFS
 Depth First Search (DFS) just finds a valid path between two points. There is no check on the length of the path. The path (if found) can be absurdly long or can be the shortest.
-![DFS gif](https://raw.githubusercontent.com/2208Abhinav/path_finder/master/gifs/dfs_path_finder.gif?token=AHGPYMM4ACHO5247LXNNKCS77XYZI)
+
+![dfs_path_finder](https://github.com/2208Abhinav/path_finder/assets/30211121/561b244a-2178-4fcf-8fdb-894cf62771e5)
 
 ### BFS
 Breadth First Search (BFS) finds the shortest valid path between two points.
-![BFS gif](https://raw.githubusercontent.com/2208Abhinav/path_finder/master/gifs/bfs_path_finder.gif?token=AHGPYMJUJCFZP22TPCSALCC77XYQQ)
+
+![bfs_path_finder gif](https://github.com/2208Abhinav/path_finder/assets/30211121/8b06f707-586f-48f5-8235-1e01315e964a)
